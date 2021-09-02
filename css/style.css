@@ -1,0 +1,246 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma", sans-serif;
+}
+a {
+  cursor: pointer;
+}
+.head {
+  padding: 0px 10px;
+  display: flex;
+  width: auto;
+  height: 60px;
+  background-color: #444444;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+.head .logo {
+  height: 60px;
+  width: 130px;
+}
+.head .menu {
+  display: flex;
+}
+.head .menu .menu-item {
+  padding: 15px;
+}
+.head .menu .menu-item .menu-link {
+  color: #FDEAA8;
+}
+.head .dropdown {
+  display: flex;
+  position: relative;
+}
+.head .dropdown.active .drop-btn img {
+  transform: rotate(180deg);
+}
+.head .dropdown.active .drop-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  top: 60px;
+}
+.head .dropdown .drop-btn {
+  padding: 12px 32px 12px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #444444;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+.head .dropdown .drop-btn img {
+  width: 28px;
+  position: absolute;
+  top: 15px;
+  transition: all 0.2s;
+}
+.head .dropdown .drop-menu {
+  border-radius: 3px;
+  min-width: 100%;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  transform: translateY(-10px);
+}
+.head .dropdown .drop-menu ul {
+  padding: 5px 0;
+}
+.head .dropdown .drop-menu ul li a {
+  display: inline-block;
+  padding: 5px 10px;
+}
+.head .Instagram {
+  height: 40px;
+  width: 40px;
+}
+.page-content .img-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-content .img-group img {
+  margin: 40px 30px 0 0;
+  height: 328px;
+}
+.page-content .img-group img:last-child {
+  margin-right: 0;
+}
+.page-content .text1 {
+  display: flex;
+  justify-content: center;
+}
+.page-content .text1 .sp-text {
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  width: 150px;
+  padding: 27px;
+  margin: 40px 200px 40px 200px;
+  border-radius: 12px;
+}
+.page-content .tool-modal {
+  margin-top: 40px;
+}
+.page-content .tool-modal .btn {
+  display: block;
+  width: 200px;
+  text-align: center;
+  padding: 12px 20px;
+  background-color: #444444;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.page-content .tool-modal .modal-container-open {
+  display: block !important;
+  align-items: center;
+  justify-content: center;
+}
+.page-content .tool-modal .modal-container-open .modal {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.page-content .tool-modal .modal-container-open .overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.page-content .tool-modal .modal-container {
+  display: none;
+}
+h2,
+p {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  width: 800px;
+}
+h2 {
+  font-size: 64px;
+}
+p {
+  padding-top: 50px;
+}
+.portfolio {
+  display: flex;
+  align-items: flex-start;
+}
+.portfolio img {
+  height: 328px;
+  margin: 20px 0 0 20px;
+}
+.portfolio .text3 {
+  display: inline;
+  width: 800px;
+  font-size: 2rem;
+  font-family: Agency FB;
+  font-weight: bold;
+  background: linear-gradient(to left, #c437b8, #ff9d2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 12px;
+  margin: 20px 0 0 20px;
+  border-radius: 0 10px 10px 10px;
+}
+.ad {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  border: solid;
+  border-width: 1px;
+  border-color: #505050;
+}
+.ad img {
+  height: 140px;
+  padding: 5px;
+}
+.ad .text2 {
+  display: inline;
+}
+.ad .text2 .topic {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ad .text2 .main-text {
+  font-size: 18px;
+}
+.slider {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 101vh;
+  background: linear-gradient(to left, #818181, #d6d6d6);
+  z-index: -1;
+}
+.windows {
+  margin: 10px;
+}
+.windows img {
+  height: 200px;
+  width: 200px;
+}
+.windows .window-right {
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 40% 25%;
+  align-items: center;
+}
+.windows .window-left {
+  margin: 20px 0 0 120px;
+  display: grid;
+  grid-template-columns: 25% 40% 1fr;
+  align-items: center;
+}
+.windows .window-lefd {
+  margin: 20px 0 0 120px;
+  display: grid;
+  grid-template-columns: 25% 40% 1fr;
+  align-items: center;
+}
+.windows .text4 {
+  text-align: center;
+  color: #FDEAA8;
+  font-size: 24px;
+}
+.windows #facebook {
+  grid-column: 2/3;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Renovations</title>
+    <link rel="stylesheet" href="css/fullpage.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<style>
+		.s1 {
+			background: url('img/renovations1.jpg') no-repeat;
+			background-size: 100%;
+		}
+
+		.s2 {
+			background: url('img/renovations2.jpg') no-repeat;
+			background-size: 100%;
+		}
+
+		.s3 {
+			background: url('img/renovations3.jpg') no-repeat;
+			background-size: 100%;
+		}
+	</style>
+	<!-- <div class="head">
+		<a href="Main.html"><img src="img/logo4.png" class="logo"></a>
+		<div class="menu">
+			<div class="menu-item"><a class="menu-link" href="https://www.instagram.com/natali_nedvijimost/">
+				<img src="img/Instagram.png" class="Instagram"></a></div>
+		</div>
+		<div class="dropdown">
+			<div class="drop-btn">
+				<img src="img/menu-of-three-lines.svg" alt="">
+			</div>
+			<div class="drop-menu">
+				<ul>
+					<li><a href="index.html">Main</a></li>
+					<li><a href="renovations.html">Renovations</a></li>
+					<li><a href="photographs.html">Photographs</a></li>
+					<li><a href="rent.html">Rent</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+	</div> -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: relative; z-index: 9999;">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="index.html">OdessaDomik</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="renovations.html">Renovations</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="photographs.html">Photographs</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="rent.html">Rent</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contacts.html">Contacts</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+	<div class="page-content">
+
+        <div id="fullpage">
+            <div class="section s1" data-anchor="home">
+                <div class="content">
+                    <h2 class="title">As soon as possible!</h2>
+                    <p class="text">Our company makes repairs in a short time. One of the fastest repairs was done in just under 30 working days!</p>
+                </div>
+            </div>
+            <div class="section s2" data-anchor="about">
+                <div class="content">
+                    <h2 class="title">The most pleasant prices!</h2>
+                    <p class="text">Our company provides a full package of repair services. Buying an apartment in a new building, you yourself decide what kind of renovation it will be, you know about the whole plan and the course of the renovation!</p>
+                </div>
+            </div>
+            <div class="section s3" data-anchor="contacts">
+                <div class="content">
+					<h2 class="title">You will always be happy with the result!</h2>
+                    <p class="text">Our clients take ready-made apartments like hotcakes, what conclusions can we draw? We are professionals who work for our clients as for ourselves!</p>
+                </div>
+            </div>
+        </div>
+
+	</div>
+	
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+<script src="js/fullpage.min.js"></script>
+<script>
+	new fullpage('#fullpage',{
+		autoScrolling: true,
+		navigation: true
+	})
+</script>
+</body>
+</html>
